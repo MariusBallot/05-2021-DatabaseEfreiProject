@@ -2,21 +2,24 @@ package rentACar;
 
 import display.Ascii;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
+
         DBManager dbManager = new DBManager();
+        ClientMode clientMode = new ClientMode(dbManager);
+        EmpMode empMode = new EmpMode(dbManager);
 
         Ascii.welcome();
-        System.out.println(Ascii.state);
-        if(Ascii.state.equals("empMode")){
-            System.out.println("ENTER LOGIN");
-            Scanner logScan = new Scanner(System.in);
-            String log = logScan.nextLine();  // Read user input
-
+        if (Ascii.state.equals("empMode")) {
+            empMode.start();
+        } else if (Ascii.state.equals("clientMode")) {
+            clientMode.start();
         }
 
-
     }
+
+
 }
