@@ -1,0 +1,12 @@
+INSERT INTO employe(id_personne, login, mdp, type) VALUES 
+(3,'biggoose266','989898','gerant'),
+(7,'blackbutterfly697','jesus','chauffeur'),
+(10,'orangebear681','amanda1','chauffeur'),
+(11,'beautifulmouse623','military','chauffeur'),
+(16,'purplewolf551','stingray','chauffeur'),
+(17,'tinyfish570','getout','chauffeur'),
+(23,'crazyswan115','chester','chauffeur'),
+(24,'blacklion162','springer','chauffeur'),
+(26,'ticklishostrich512','million','chauffeur'),
+(27,'sadbutterfly381','openup','chauffeur'),
+(28,'brownleopard550','camaross','chauffeur');
